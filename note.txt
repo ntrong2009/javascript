@@ -1,0 +1,19 @@
+promise thường dùng để get hoặc update dữ liệu
+
+
+Tạo một promise khá đơn giản, chỉ cần tạo mới đối tượng Promise new Promise. 
+Và hàm constructor của Promise nhận 2 tham số là 2 hàm — resolve và reject
+
+const promise = new Promise((resolve, reject) => {
+  /* Do something here */
+  resolve()
+  reject()
+})
+
+
+Nếu hàm resolve được gọi, trạng thái của promise sẽ là thành công và hành động .then được gọi
+nếu hàm reject được gọi, trạng thái của promise sẽ là thất bại và hành động catch được gọi
+
+promise
+  .then(data => {/* xử lý data */})
+  .catch(err => {/* xử lý lỗi */})
