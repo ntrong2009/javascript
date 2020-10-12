@@ -1,0 +1,5 @@
+toán tử instanceof cho phép để kiểm tra xem một đối tượng thuộc về một lớp nhất định nào vậy. 
+Nó cũng có tính kế thừa.
+
+obj instanceof Class
+Nó trả về true nếu obj thuộc về Class hoặc một lớp kế thừa từ nó.
