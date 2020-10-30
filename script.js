@@ -15,4 +15,15 @@ class Animal {
 }
 
 let obj = { canEat: true };
-alert(obj instanceof Animal);
+// alert(obj instanceof Animal);
+
+let obj1 = {
+    valueA: 'a',
+    b: 'b',
+    valueC: 'c',
+}
+
+let { valueA, valueC } = obj1;
+
+console.log(valueA);
+console.log(valueC);
