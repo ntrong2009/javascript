@@ -8,6 +8,9 @@
 // }
 
 
+
+// chuyển đổi một đối tượng thời gian thành một chuỗi thời gian dựa theo quy tắc thời gian của địa phương. 
+// Chuỗi trả về sẽ bao gồm các thông tin giờ, phút, giây, ngày, tháng, năm
 // hàm toLocaleString nhận vào 2 tham số tùy chọn : locale, option
 // locale : en-US, en-GB, ko-KR, fa-IR, ar-EG, ja-JP-u-ca-japanese
 // option : {}
