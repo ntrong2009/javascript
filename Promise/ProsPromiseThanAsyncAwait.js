@@ -18,19 +18,19 @@ const Y = y => {
 async function total(x, y) {
     console.time(`TIME-PROCESS`);
     
-    // cách 1 : sử dụng await mất 5s
+    // cách 1 : tốn 5s
     // const _x = await X(x);
     // const _y = await Y(y);
 
-    // cách 2 : sử dụng Promise.All mất 3s
-    // const [_x, _y] = await Promise.all([X(x), Y(y)]);
+    // cách 2 : tốn 3s do 2 tiến trình X và Y chạy song song
+    const [_x, _y] = await Promise.all([X(x), Y(y)]);
 
-    // cách 3 : mất 3s
-    const _awaitX = X(x);
-    const _awaitY = Y(y);
+    // cách 3 (cách khác của AsyncAwait) : mất 3s
+    // const _awaitX = X(x);
+    // const _awaitY = Y(y);
 
-    const _x = await _awaitX;
-    const _y = await _awaitY;
+    // const _x = await _awaitX;
+    // const _y = await _awaitY;
 
     console.timeEnd(`TIME-PROCESS`);
     return _x + _y;
