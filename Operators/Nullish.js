@@ -1,7 +1,7 @@
 // được gọi là toán tử liên kết nullish
 // toán tử trả về đối số đầu tiên nếu not null/undefined
 const a = null;
-console.log(a ?? 5);
+console.log(a ?? 5); // 5
 
 
 // điểm khác nhau giữa nullish với OR
