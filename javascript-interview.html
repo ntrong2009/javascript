@@ -5,25 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Interview</title>
-    <link rel="stylesheet" href="../../../assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <div>
-        <a href="">use "strict" trong js có ý nghĩa gì ?</a>
-    </div>
-    <div id="strict-trong-js">
+    <button type="button" class="collapsible">
         <h3>use "strict" trong js có ý nghĩa gì ?</h3>
-        <span>use strict" là một chỉ thị được giới thiệu trong ECMAScript 5 (ES5) để
+    </button>
+    <div class="content">
+        <span><b>use strict</b> là một chỉ thị được giới thiệu trong ECMAScript 5 (ES5) để
             cho phép một chế độ nghiêm ngặt hơn khi viết mã JavaScript. Khi bạn sử
-            dụng "use strict", JavaScript sẽ thực thi một tập hợp các quy tắc và hạn
+            dụng <b>use strict</b>, JavaScript sẽ thực thi một tập hợp các quy tắc và hạn
             chế chặt chẽ hơn, giúp bạn tránh được một số lỗi phổ biến và các hành vi
             không mong muốn.</span>
         <ul>
             <li>
                 <p>
                     Trong chế độ không nghiêm ngặt, bạn có thể vô tình khai báo một biến
-                    mà không sử dụng từ khóa var, let, hoặc const, và biến này sẽ trở
+                    mà không sử dụng từ khóa <b>var</b>, <b>let</b>, hoặc <b>const</b>, và biến này sẽ trở
                     thành biến toàn cục. Trong chế độ nghiêm ngặt, điều này sẽ gây ra
                     lỗi.
                 </p>
@@ -54,7 +53,7 @@
             </li>
             <li>
                 <p>
-                    Cấm việc sử dụng từ khóa with vì nó làm cho mã khó đọc và bảo trì.
+                    Cấm việc sử dụng từ khóa <b>with</b> vì nó làm cho mã khó đọc và bảo trì.
                 </p>
                 <pre>
                     "use strict";
@@ -65,7 +64,7 @@
             </li>
             <li>
                 <p>
-                    Ngăn chặn việc sử dụng this là undefined trong các hàm, Trong chế độ
+                    Ngăn chặn việc sử dụng <b>this</b> là <b>undefined</b> trong các hàm, Trong chế độ
                     nghiêm ngặt, nếu bạn gọi một hàm mà không có đối tượng cụ thể
                     (this), this sẽ là undefined thay vì là đối tượng toàn cục (window
                     trong trình duyệt)
